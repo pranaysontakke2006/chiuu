@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopSphere - Online Shopping</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="#">ShopSphere<span>.</span></a>
+
+    <div class="delivery">
+      <small>Deliver to</small>
+      <strong>India</strong>
+    </div>
+
+    <form class="search" id="searchForm">
+      <select id="category">
+        <option value="all">All</option>
+        <option value="electronics">Electronics</option>
+        <option value="fashion">Fashion</option>
+        <option value="home">Home</option>
+      </select>
+      <input id="searchInput" type="search" placeholder="Search ShopSphere">
+      <button type="submit">🔍</button>
+    </form>
+
+    <a class="nav-link" href="#">Hello, sign in</a>
+    <a class="nav-link cart-link" href="#cart">🛒 Cart <b id="cartCount">0</b></a>
+  </header>
+
+  <nav class="subnav">
+    <a href="#products">☰ All</a>
+    <a href="#products">Today's Deals</a>
+    <a href="#products">Electronics</a>
+    <a href="#products">Fashion</a>
+    <a href="#products">Home & Kitchen</a>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">YOUR EVERYDAY SHOPPING DESTINATION</p>
+        <h1>Find what you<br>love for less.</h1>
+        <p>Discover products for your life, style and home.</p>
+        <a class="shop-button" href="#products">Explore products →</a>
+      </div>
+      <div class="hero-art">🛍️</div>
+    </section>
+
+    <section class="categories">
+      <a href="#products" data-category="electronics">📱<span>Electronics</span></a>
+      <a href="#products" data-category="fashion">👕<span>Fashion</span></a>
+      <a href="#products" data-category="home">🏠<span>Home</span></a>
+      <a href="#products" data-category="all">🎁<span>All products</span></a>
+    </section>
+
+    <section class="product-section" id="products">
+      <div class="section-heading">
+        <h2>Popular products</h2>
+        <span id="resultCount"></span>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <section class="cart-section" id="cart">
+  <h2>Your Shopping Cart</h2>
+  <div id="cartItems"></div>
+  <div class="cart-total">
+    <strong>Total: ₹<span id="cartTotal">0</span></strong>
+    <button id="checkoutButton">Proceed to Checkout</button>
+  </div>
+</section>
+    <a href="#">Back to top ↑</a>
+    <p>ShopSphere — Your shopping, your way.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
